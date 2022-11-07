@@ -1,5 +1,5 @@
 function podesubir(n1, n2) {    
-    console.log(n2 == 's' ? 'True' : 'False')
+    console.log(n2 == 'Acompanhada' ? 'True' : 'False')
     if (n1 > 1.40 && n1 < 2.00) {                   
         return 'Acesso autorizado';
     }else if (n1 < 1.40 && n1 > 1.20 ) {
@@ -10,4 +10,4 @@ function podesubir(n1, n2) {
 
 }
 
-console.log(podesubir(1.30 , 's'))
+console.log(podesubir(1.30 , 'Acompanhada'))
