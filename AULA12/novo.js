@@ -18,7 +18,7 @@ function encontrarGanhador(a, b) {
     }
     console.log(n1)
 if (n1.pontoalice > n1.pontoBob) {
-   return 'Alice ganhou';
+   return 'Alicia ganhou';
 }else {
    return 'Bob ganhou';
 }
