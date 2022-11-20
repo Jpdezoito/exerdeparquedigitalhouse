@@ -23,5 +23,23 @@ if (n1.pontoalice > n1.pontoBob) {
    return 'Bob ganhou';
 }
 }
-
 console.log(encontrarGanhador(alicia,bob))
+let num = {n4 : 0}
+
+function digitalhouse(n1,n2) {
+    for (let i = 0; i <= 10 ; i++) {
+        let res = n1 * i ; 
+        let res1 = n2 * i;
+        if(i == res){
+            return 'Digital'
+        } else if(i == res1) {
+            return 'House'
+        }
+        console.log(`${n1} * ${i} = ${res}`)
+        console.log(`${n1} * ${i} = ${res1}`)
+
+}
+}
+console.log(digitalhouse(5,2))
+
+
