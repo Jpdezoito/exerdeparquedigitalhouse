@@ -26,20 +26,29 @@ if (n1.pontoalice > n1.pontoBob) {
 console.log(encontrarGanhador(alicia,bob))
 let num = {n4 : 0}
 
-function digitalhouse(n1,n2) {
-    for (let i = 0; i <= 10 ; i++) {
-        let res = n1 * i ; 
-        let res1 = n2 * i;
-        if(i == res){
-            return 'Digital'
-        } else if(i == res1) {
-            return 'House'
-        }
-        console.log(`${n1} * ${i} = ${res}`)
-        console.log(`${n1} * ${i} = ${res1}`)
+function digitalhouse(n1,n2) { 
+  
+    for (i = 0; i <= 100; i++){
+    if (i % n1 === 0 && i % n2 !== 0){
+      console.log('Digital');
+    }else if (i % n2 === 0 && i % n1 !== 0){
+      console.log('House');
+    }else if (i % n1 === 0 && i % n2 === 0){
+      console.log('Digital House');
+    }else {
+      console.log(i);
+    }
+  }
+  }
+digitalhouse(10,5)
 
-}
-}
-console.log(digitalhouse(5,2))
+let somargarr = function(b1){
+    let soma = 0;
+    for(let i = 0; i < b1.length; i++){
+        soma = soma+b1[i];
+    }
+    return soma
+}  
+console.log(somararr([10,5,8,10,7,10,6]));
 
 
