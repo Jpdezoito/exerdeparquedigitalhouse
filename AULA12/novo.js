@@ -42,7 +42,7 @@ function digitalhouse(n1,n2) {
   }
 digitalhouse(10,5)
 
-let somargarr = function(b1){
+let somararr = function(b1){
     let soma = 0;
     for(let i = 0; i < b1.length; i++){
         soma = soma+b1[i];
@@ -51,4 +51,12 @@ let somargarr = function(b1){
 }  
 console.log(somararr([10,5,8,10,7,10,6]));
 
+let join = function(bb){
+    let valor = '';
+    bb.forEach(el => {
+        valor = valor + el;
+    });
+    return valor
+}
+console.log(join((['o','l','a'])))
 
