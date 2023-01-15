@@ -1,0 +1,17 @@
+
+
+.circulo {
+    border-radius: 50%;
+    border: 12px solid blue;
+    box-shadow: 5px 5px blue;
+    height: 400px;
+    width: 30%;
+}
+
+.ativado {
+    border: 12px solid red;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+
+}
